@@ -1,0 +1,42 @@
+using System;
+
+namespace FirstProject;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        int crapsNumber1;
+        int crapsNumber2;
+
+        Random random = new Random();
+
+        Console.WriteLine("Spill Start!");
+        Console.WriteLine("      ");
+        Console.WriteLine("      ");
+
+
+        for (int i = 0; i < 20; i++)
+        {
+
+            crapsNumber1 = random.Next(1, 7);
+            Console.WriteLine("crapsNumber1 rulle---" + crapsNumber1);
+
+
+            crapsNumber2 = random.Next(1, 7);
+            Console.WriteLine("crapsNumber2 rulle---" + crapsNumber2);
+
+
+            int sum = crapsNumber1 + crapsNumber2;
+            Console.WriteLine("Total spillerscore for denne runde : " + sum);
+
+            Console.WriteLine("      ");
+            Console.WriteLine("      ");
+
+
+        }
+
+        Console.ReadLine();
+
+    }
+}
