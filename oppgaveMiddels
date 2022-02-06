@@ -1,0 +1,43 @@
+using System;
+
+namespace FirstProject;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("skrive karakter ");
+        int x = int.Parse(Console.ReadLine());
+
+        if (0 < x && x < 50)
+        {
+            Console.WriteLine("F");
+        }
+        else if (50 <= x && x < 60)
+        {
+            Console.WriteLine("E");
+        }
+        else if (60 <= x && x < 70) 
+        {
+            Console.WriteLine("D");
+        }
+        else if (70 <= x && x < 80)
+        {
+            Console.WriteLine("C");
+        }
+        else if (80 <= x && x < 90)
+        {
+            Console.WriteLine("B");
+        }
+        else if (90 <= x && x <= 100)
+        {
+            Console.WriteLine("A");
+        }
+        else
+        {
+            Console.WriteLine("Skrive gyldig karakter 0 til 100");
+        }
+    }
+
+
+}
